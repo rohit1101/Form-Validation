@@ -36,33 +36,40 @@ body::after {
 }
 
 h1 {
-  margin: 1rem 10.8rem;
+  text-align: center;
+  margin: 1rem 0;
   font-size: 3rem;
 }
 
 .con {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 7rem;
-  height: 60rem;
+  height: 70rem;
   z-index: 2;
 }
 
 .con .c1 {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-  flex: 0.5;
   border-radius: 20px 20px 20px 20px;
   color: wheat;
+  width: 50%;
+}
+
+.con .c1 .uname,
+.con .c1 .em,
+.con .c1 .pa,
+.con .c1 .cpa,
+.con .c1 .phone {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 .con .c1 input {
   margin: 1rem auto;
   padding: 0.8rem 0;
-  width: 70%;
+  width: 60%;
 }
 
 .con .c1 input:focus {
@@ -70,9 +77,13 @@ h1 {
   border: solid 3px #efc88b;
 }
 
-.con .c1 label {
+.con .c1 .uname label,
+.con .c1 .em label,
+.con .c1 .pa label,
+.con .c1 .cpa label,
+.con .c1 .phone label {
   display: block;
-  margin: 1rem 10.8rem;
+  margin: 1rem 14.5rem;
   font-size: 1.8rem;
 }
 
@@ -81,16 +92,16 @@ h1 {
   border: none;
   border-radius: 4px 4px 4px 4px;
   padding: 1rem 0;
-  margin: 1rem 10.8rem;
+  margin: 2rem 14.5rem;
   cursor: pointer;
 }
 
 .con .c1 small {
   margin-left: 10.8rem;
+  margin: 0.2rem 14.5rem;
   color: var(--error);
   font-size: 1rem;
-  display: none;
-  /* visibility: hidden; */
+  /* display: none; */
 }
 
 .con .c1 .inps.success {

@@ -19,12 +19,21 @@ function handleInput(e) {
     e.currentTarget.classList.add('error');
   }
 
-  if (e.currentTarget.type === 'email' && e.currentTarget.value.includes('@')) {
+  if (
+    e.currentTarget.type === 'email' &&
+    e.currentTarget.value.includes('@') &&
+    (e.currentTarget.value.includes('gmail.com') ||
+      e.currentTarget.value.includes('hotmail.com') ||
+      e.currentTarget.value.includes('yahoo.com'))
+  ) {
     e.currentTarget.classList.remove('error');
     e.currentTarget.classList.add('success');
   } else if (
     e.currentTarget.type === 'email' &&
-    !e.currentTarget.value.includes('@')
+    !e.currentTarget.value.includes('@') &&
+    (!e.currentTarget.value.includes('gmail.com') ||
+      !e.currentTarget.value.includes('hotmail.com') ||
+      !e.currentTarget.value.includes('yahoo.com'))
   ) {
     e.currentTarget.classList.remove('success');
     e.currentTarget.classList.add('error');
@@ -50,6 +59,22 @@ function handleInput(e) {
   } else if (
     e.currentTarget.id === 'con' &&
     e.currentTarget.value !== passwordChecked.value
+  ) {
+    e.currentTarget.classList.remove('success');
+    e.currentTarget.classList.add('error');
+  }
+
+  if (
+    e.currentTarget.type === 'tel' &&
+    e.currentTarget.value.match(/^[6-9]\d{9}/) &&
+    e.currentTarget.value.length === 10
+  ) {
+    e.currentTarget.classList.remove('error');
+    e.currentTarget.classList.add('success');
+  } else if (
+    e.currentTarget.type === 'tel' &&
+    (!e.currentTarget.value.match(/^[6-9]\d{9}/) ||
+      e.currentTarget.value.length > 10)
   ) {
     e.currentTarget.classList.remove('success');
     e.currentTarget.classList.add('error');
