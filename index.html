@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 700px)"
+      href="./css/media.css"
+      type="text/css"
+    />
   </head>
   <body>
     <div class="con">
@@ -21,7 +27,7 @@
             min="5"
             max="20"
           />
-          <small>Error Message</small>
+          <small class="one">Error Message</small>
         </div>
         <div class="em">
           <label>Email</label>
@@ -32,8 +38,9 @@
             placeholder="Enter email"
             required
           />
-          <small>Error Message</small>
+          <small class="two">Error Message</small>
         </div>
+
         <div class="pa">
           <label>Password</label>
           <input
@@ -46,12 +53,12 @@
             min="6"
             max="10"
           />
-          <small>Error Message</small>
+          <small class="three">Error Message</small>
         </div>
+
         <div class="cpa">
           <label>Confirm Password</label>
           <input
-            id="con"
             class="inps"
             type="password"
             name=""
@@ -60,13 +67,13 @@
             min="6"
             max="10"
           />
-          <small>Error Message</small>
+          <small class="four">Error Message</small>
         </div>
         <div class="phone">
           <label>Phone Number</label>
           <input class="inps" type="tel" placeholder="Enter Mobile Number" />
-          <small>Error Message</small>
-          <input type="submit" />
+          <small class="five">Error Message</small>
+          <input type="submit" id="sub" />
         </div>
       </form>
     </div>

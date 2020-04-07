@@ -1,27 +1,10 @@
-:root {
-  --success: #2ecc71;
-  --error: #e74c3c;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 body {
   background-image: url('https://images.pexels.com/photos/2362004/pexels-photo-2362004.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  height: 90vh;
+  /* background-attachment: fixed; */
+  height: 93vh;
 }
 
 body::after {
@@ -30,30 +13,30 @@ body::after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 74rem;
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
 h1 {
   text-align: center;
   margin: 1rem 0;
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 
 .con {
   display: flex;
   justify-content: center;
-  margin-top: 7rem;
-  height: 70rem;
+  margin-top: 2rem;
+  height: 65rem;
   z-index: 2;
 }
 
 .con .c1 {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 20px 20px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px 10px 10px 10px;
   color: wheat;
-  width: 50%;
+  width: 90%;
 }
 
 .con .c1 .uname,
@@ -68,8 +51,8 @@ h1 {
 
 .con .c1 input {
   margin: 1rem auto;
-  padding: 0.8rem 0;
-  width: 60%;
+  padding: 0.5rem 0;
+  width: 80%;
 }
 
 .con .c1 input:focus {
@@ -83,7 +66,7 @@ h1 {
 .con .c1 .cpa label,
 .con .c1 .phone label {
   display: block;
-  margin: 1rem 14.5rem;
+  margin: 1rem 3.5rem;
   font-size: 1.8rem;
 }
 
@@ -92,16 +75,16 @@ h1 {
   border: none;
   border-radius: 4px 4px 4px 4px;
   padding: 1rem 0;
-  margin: 2rem 14.5rem;
+  margin: 1rem 3.5rem;
   cursor: pointer;
 }
 
 .con .c1 small {
-  margin: 0.2rem 14.5rem;
+  /* margin-left: 10.8rem; */
+  margin: 0.2rem 3.5rem;
   color: var(--error);
   font-size: 1.2rem;
   visibility: hidden;
-  font-weight: 700;
   /* display: none; */
 }
 
